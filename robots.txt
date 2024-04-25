@@ -1,4 +1,5 @@
 User-Agent: *
+Disallow: /index.html
 Disallow: puzzleMaker/image/
 Disallow: puzzleMaker/sys/
 Disallow: puzzleMaker/css/
