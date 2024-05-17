@@ -6,3 +6,4 @@ Disallow: /puzzleMaker/js/
 Disallow: /BoomerangSurvivor3_SpecialEdition/
 Disallow: /index.html
 Disallow: /redirectter/
+Disallow: /war/
