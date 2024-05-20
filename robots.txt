@@ -7,3 +7,4 @@ Disallow: /BoomerangSurvivor3_SpecialEdition/
 Disallow: /index.html
 Disallow: /redirectter/
 Disallow: /war/
+Disallow: /BS3_specialEdition_assistMode/
