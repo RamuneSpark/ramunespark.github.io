@@ -8,3 +8,9 @@ Disallow: /index.html
 Disallow: /redirectter/
 Disallow: /war/
 Disallow: /BS3_arcadeEdition_assistMode/
+Disallow: /boomerangSurvivor_mobile/image/
+Disallow: /boomerangSurvivor_mobile/sys/
+Disallow: /boomerangSurvivor_mobile/css/
+Disallow: /boomerangSurvivor_mobile/js/
+Disallow: /boomerangSurvivor_mobile/modules/
+Disallow: /boomerangSurvivor_mobile/ogg/
