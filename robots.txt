@@ -15,3 +15,4 @@ Disallow: /boomerangSurvivor_mobile/js/
 Disallow: /boomerangSurvivor_mobile/modules/
 Disallow: /boomerangSurvivor_mobile/ogg/
 Disallow: /boomerangSurvivor_mobile/pcInformation/
+Disallow: /favicon.ico
