@@ -1,10 +1,11 @@
 User-Agent: *
+Disallow: /privacyPolicy/
+Disallow: /support/
 Disallow: /puzzleMaker/image/
 Disallow: /puzzleMaker/sys/
 Disallow: /puzzleMaker/css/
 Disallow: /puzzleMaker/js/
 Disallow: /BoomerangSurvivor3_SpecialEdition/
-Disallow: /index.html
 Disallow: /redirectter/
 Disallow: /war/
 Disallow: /BS3_arcadeEdition_assistMode/

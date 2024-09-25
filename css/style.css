@@ -1,0 +1,464 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 15px;
+    
+}
+
+.MainTitle{
+
+    width:100%
+
+}
+
+.blank{
+
+    width:100%;
+    height:80px;
+
+}
+
+.blank2{
+
+    width:100%;
+    height:30px;
+
+}
+
+.pageTitle{
+
+    text-align: center;
+    color: #1959A8;
+    font-weight: bold;
+    font-size: 2.2rem;
+
+}
+
+.container {
+    width: 90%;
+    background: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 600px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 30px rgba(218, 136, 182, 0.3);
+    border-radius: 20px;
+
+}
+
+
+
+.item {
+
+    display: block;
+    width: 47%;
+    height:140px;
+    margin: 10px;
+    background: #FFFFFF;
+    box-shadow: 0 0 30px rgba(25, 89, 168, 0.3);
+    border-radius: 0px;
+    overflow: hidden;
+
+}
+
+.item a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.itemI {
+
+    position: relative;
+    left:2%;
+    top:50%;
+    height:100px;
+    width: 100px;
+
+    transform: translate(0%,-50%);
+
+}
+
+.itemT{
+    position: absolute;
+margin: 10px;
+left:110px;
+top:0px;
+
+}
+
+.itemTitle{
+    color: #1959A8;
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+
+.itemHR{
+
+    width: 100%;
+    border-top: 1px;
+    color:#1959A8;
+
+}
+
+.itemEx{
+    color: #5D98B5;
+    font-weight: normal;
+    font-size: 0.8rem;
+    
+}
+
+.itemI img{
+
+    height:100%;
+    width:auto;
+
+}
+
+
+
+.itemLinkBox {
+    width: 100%;
+    height:100%;
+}
+
+.container2 {
+    width: 90%;
+    background: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 600px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 30px rgba(242, 238, 108, 0.3);
+    border-radius: 20px;
+
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #1959A8;
+}
+
+
+h1 {
+
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+ul {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.box{
+
+    position: relative;
+    left:50%;
+    transform: translate(-50%,0%);
+    width:90%;
+    align-items: stretch;
+    
+  justify-content: center;
+ 
+    box-shadow: 0 0 30px rgba(218, 136, 182, 0.3);
+    max-width: 1100px;
+    padding:50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.boxTitle{
+
+    text-align: center;
+    color: #1959A8;
+    font-size: 2.0rem;
+    font-weight: bold;
+
+}
+
+.containerTitle {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+#logo{
+    position: relative;
+    left:50%;
+    transform: translate(-50%,0%);
+    height: 100px;
+    width:100%;
+    max-width: 1200px;
+}
+#logo img{
+    height: 100px;
+    width:auto;
+
+}
+p,li {
+    color: #1959A8;
+    font-weight: normal;
+    
+}
+p{
+    font-size: 1.15em;
+}
+li{
+    
+    font-size: 1.0rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #5D98B5;
+
+}
+#copyRight{
+    position: relative;
+    left:50%;
+    transform: translate(-50%,0%);
+    color: #1959A8;
+    font-weight: normal;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 1200px;
+    text-align:right;
+
+}
+#top{
+    position: relative;
+    left:50%;
+    transform: translate(-50%,0%);
+    color: #1959A8;
+    font-weight: normal;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 1200px;
+    text-align:center;
+
+}
+
+
+@media screen and (max-width: 959px) {
+
+    .blank{
+
+        height:70px;
+    
+    }
+    
+    .blank2{
+
+        height:25px;
+    
+    }
+    .item {
+        width: 80%;
+        height:120px;
+     
+    }
+    .itemI {
+
+        height:80px;
+        width: 80px;
+       
+    
+    }
+    .itemT{
+    left:90px;
+    
+    }
+    
+    .itemTitle{
+        font-size: 1.0rem;
+        
+    }
+
+    .itemEx{
+        font-size: 0.65rem;
+        
+    }
+    
+    h1 {
+
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 1.0rem;
+    }
+
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .container2 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    ul {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .pageTitle{
+    
+        font-size: 1.9rem;
+    
+    }
+    .box{
+        padding:30px;
+
+    
+    }
+    .boxTitle{
+
+        font-size: 1.5rem;
+    
+    }
+    #logo{
+        height: 70px;
+        width:100%;
+    
+    }
+    #logo img{
+        height: 70px;
+        width:auto;
+    
+    }
+    #copyRight,#top{
+        font-size: 0.9rem;
+     
+    }
+    p{
+        font-size: 1.0em;
+    }
+
+
+}
+@media screen and (max-width: 480px) {
+
+    .blank{
+
+        height:60px;
+    
+    }
+    
+    .blank2{
+
+        height:20px;
+    
+    }
+    .item {
+        width: 90%;
+        height:100px;
+     
+    }
+    .itemI {
+
+        height:60px;
+        width: 60px;
+       
+    
+    }
+    .itemT{
+        left:70px;
+        
+        }
+        
+        .itemTitle{
+            font-size: 0.8rem;
+            
+        }
+        .itemEx{
+            font-size: 0.50rem;
+            
+        }
+    h1 {
+
+        font-size: 1.3rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    h3 {
+        font-size: 1.0rem;
+    }
+    
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .container2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    ul {
+         padding-left: 20px;
+        padding-right: 20px;
+    
+    }
+    .pageTitle{
+    
+        font-size: 1.7rem;
+    
+    }
+    .box{
+
+        padding:15px;
+    
+    
+    }
+    .boxTitle{
+
+        font-size: 1.3rem;
+    
+    }
+    #logo{
+        height: 50px;
+        width:100%;
+    
+    }
+    #logo img{
+        height: 50px;
+        width:auto;
+    
+    }
+    #copyRight,#top{
+        font-size: 0.7rem;
+    }
+    p{
+        font-size: 0.8em;
+    }
+
+}
