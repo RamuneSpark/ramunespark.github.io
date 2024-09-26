@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type = "image/vnd.microsoft.icon" href="../favicon.ico" />
+      
+    <title>プライバシーポリシー |RAMUNE SPARK</title>
+    <link rel = "stylesheet" href="../css/style.css">
+         
+</head>
+<body>
+
+
+    <div id = "logo">
+        <a href="../index.html">
+        <img src = "../img/logo.png">
+        </a>
+    </div>
+
+    <div class = "blank"></div>
+
+    <div class = "MainTitle">
+
+        <div class = pageTitle id="privacyPolicyTitle">
+            ロードエラー！
+        </div>
+
+    </div>
+
+    
+
+    <div class = "blank2"></div>
+
+    <div class="container" id="privacyPolicyBox">
+        <ul>
+            <p>プライバシーポリシーのデータの取得に失敗しました。</p>
+            <li>JavaScriptが無効になっている場合、プライバシーポリシーを正常に表示できません。</li>
+            </ul>
+         </div>
+
+
+        <div class="blank2"></div>
+        <div id = copyRight>
+            © RAMUNE SPARK
+        </div>
+        <div id = copyRight>
+            <a href="../support">
+            サポート
+            </a>
+        </div>
+        <div id = top>
+            <a href="../">
+            [TOP]
+            </a>
+        </div>
+
+<script>
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+let game = urlParams.get('game');
+
+//ポリシー1
+const p1 = ["bs","bs2","bs3"];
+const t1 = ["ブーメランサバイバー","ブーメランサバイバー2","ブーメランサバイバー3"]
+const tE1 = ["Boomerang Survivor","Boomerang Survivor 2","Boomerang Survivor 3"]
+
+let success = 0;
+
+let a = `<ul>
+            <p>プライバシーポリシーのデータの取得に失敗しました。</p>
+            <li>URLが正しくない可能性があります。</li>
+            <li>ページのキャッシュ等を削除すると、解消する可能性があります。</li>
+            </ul>
+        `;
+
+for(let i = 0; i < p1.length; i++){
+
+if(p1[i] === game){
+
+success = 1;
+
+a = `<ul>
+            <p>ラムネの『<span style = "font-weight: bold;">`+t1[i]+`</span>』（以下、「本ソフトウェア」といいます）のプライバシーポリシーです。</p>
+            <h2>日本語</h2>  
+            <li>本ソフトウェアは、ユーザーの個人情報やプライバシー情報を収集いたしません。</li>
+            <li>本ソフトウェアは、ユーザーによって開かれたファイルを保持したり、送信したりすることはありません。</li>
+            <h2>English</h2>  
+            <li>"`+tE1[i]+`" does not collect any personal or private information of the user.</li>
+            <li>"`+tE1[i]+`" does not collect any files selected by the user.</li>
+            </ul>`;
+
+break;
+
+}
+
+
+
+}
+
+
+document.getElementById("privacyPolicyBox").innerHTML = a;
+
+if(success === 1){
+document.getElementById("privacyPolicyTitle").innerHTML = "プライバシーポリシー";
+}
+
+
+</script>
+
+</body>
+</html>

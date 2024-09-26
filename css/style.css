@@ -109,6 +109,7 @@ top:0px;
 .itemHR{
 
     width: 100%;
+    margin: 2px;
     border-top: 1px;
     color:#1959A8;
 
@@ -117,7 +118,7 @@ top:0px;
 .itemEx{
     color: #5D98B5;
     font-weight: normal;
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     
 }
 
@@ -304,7 +305,7 @@ li{
     }
 
     .itemEx{
-        font-size: 0.65rem;
+        font-size: 0.8rem;
         
     }
     
@@ -401,7 +402,7 @@ li{
             
         }
         .itemEx{
-            font-size: 0.50rem;
+            font-size: 0.65rem;
             
         }
     h1 {
