@@ -8,6 +8,7 @@ Disallow: /puzzleMaker/js/
 Disallow: /BoomerangSurvivor3_SpecialEdition/
 Disallow: /redirectter/
 Disallow: /war/
+Disallow: /manual/
 Disallow: /BS3_arcadeEdition_assistMode/
 Disallow: /boomerangSurvivor_mobile/image/
 Disallow: /boomerangSurvivor_mobile/sys/
