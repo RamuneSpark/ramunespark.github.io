@@ -364,6 +364,9 @@ li{
     p{
         font-size: 1.0em;
     }
+    li{
+        font-size: 0.9em;
+    }
 
 
 }
@@ -460,6 +463,9 @@ li{
     }
     p{
         font-size: 0.8em;
+    }
+    li{
+        font-size: 0.75em;
     }
 
 }
