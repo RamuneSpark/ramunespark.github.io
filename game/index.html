@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type = "image/vnd.microsoft.icon" href="../favicon.ico" />
+      
+    <title>作品リスト | RAMUNE SPARK</title>
+    <link rel = "stylesheet" href="../css/style.css">
+         
+</head>
+<body>
+
+
+    <div id = "logo">
+        <a href="../">
+        <img src = "../img/logo.png">
+        </a>
+    </div>
+
+    <div class = "blank"></div>
+
+    <div class = "MainTitle">
+
+        <div class = pageTitle id="privacyPolicyTitle">
+            ロードエラー！
+        </div>
+
+    </div>
+
+    
+
+    <div class = "blank2"></div>
+
+    <div class="container" id="privacyPolicyBox">
+        <ul>
+            <p>リストのデータの取得に失敗しました。</p>
+            <li>JavaScriptが無効になっている場合、リストのデータを正常に表示できません。</li>
+            </ul>
+         </div>
+
+
+         <div class="blank2"></div>
+
+         <div id = top>
+             <a href="../">
+             [TOP]
+             </a>
+         </div>
+        <div class="blank2"></div>
+        <div id = copyRight>
+            © RAMUNE SPARK
+        </div>
+        <div id = copyRight>
+            <a href="../support">
+            サポート
+            </a>
+        </div>
+
+        <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
+<script>
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+let game = urlParams.get('title');
+
+
+const p1 = ["bs","bs2","bs3"];
+const t1 = ["ブーメランサバイバー","ブーメランサバイバー2","ブーメランサバイバー3"]
+const tE1 = ["Boomerang Survivor","Boomerang Survivor 2","Boomerang Survivor 3"]
+
+let success = 0;
+
+let a = `<ul>
+            <p>リストのデータの取得に失敗しました。</p>
+            <li>URLが正しくない可能性があります。</li>
+            <li>ページのキャッシュ等を削除すると、解消する可能性があります。</li>
+            </ul>
+        `;
+
+for(let i = 0; i < p1.length; i++){
+
+if(p1[i] === game){
+
+success = 1;
+
+document.getElementById("privacyPolicyTitle").innerHTML = t1[i];
+visual(i);
+
+break;
+
+}
+
+
+
+}
+
+
+function visual(i){
+
+    document.title = t1[i]+" | RAMUNE SPARK";
+    document.getElementById("privacyPolicyBox").innerHTML = "";
+
+    const keyVisual = document.createElement("div");
+    keyVisual.id = "keyVisual";
+    const keyVisual_img = document.createElement("img");
+    document.getElementById("privacyPolicyBox").appendChild(keyVisual);
+    keyVisual.appendChild(keyVisual_img);
+
+
+    
+    keyVisual_img.src = "keyVisual/"+p1[i]+".png";
+
+    const p = document.createElement("p");
+    p.innerHTML = navi(i);
+    document.getElementById("privacyPolicyBox").appendChild(p);
+    
+    const ms = document.createElement("ms");
+    document.getElementById("privacyPolicyBox").appendChild(ms);
+    ms.innerHTML = badge(i);
+
+
+}
+
+function badge(e){
+
+
+
+    const a = ['','','<ms-store-badge productid="9PJWNT9TR18S" productname="ブーメランサバイバー3" window-mode="direct" theme="dark" language="ja-jp" animation="off"></ms-store-badge>'];
+
+    const b = a[e];
+
+    return b;
+
+}
+
+function navi(e){
+const a = ["主人公の「メイプル」を操作して、画面中の敵キャラクターを倒して生きのびるアクションシューティングゲームです。<br>出来るアクションは「ブーメランを投げること」だけですが、その動きはちょっとだけ独特。投げたブーメランがメイプルのもとに返ってくるのを逆手に取れば、攻撃の仕掛け方は様々です。<br>激しくなっていく敵の攻撃を乗り越えて、ハイスコアを目指しましょう！",
+    "画面中の敵キャラクターをブーメランで倒していく『ブーメランサバイバー』の第二弾です。主人公の「メイプル」が、リーフ星の征服を狙う「ブート伯爵」に立ち向かいます。<br>今作より装い新たにステージクリア形式に一新し、ステージや敵のバリエーションもパワーアップ。メイプルとブーメランを巧みにコントロールして、全5ステージ（21エリア）のクリアを目指しましょう！",
+    "プレイヤーとブーメランのコントロールを巧みにこなして、敵をなぎ倒そう。『ブーメランサバイバー』を遊んだことのない方にも、慣れている方にもおすすめです。<br><br>-ステージがパワーアップ！<br>ジャンプ床やワープホールなど、ギミックのバリエーションがより多彩になりました。また、ステージごとの地形もより個性的に。うまく活かして攻略しましょう。<br><br>-シリーズ初の2人プレイ対応<br>今回は主人公の「メイプル」に加え、新しい仲間「シナモン」が初登場。途中参加OKの2人同時プレイで、協力してゲームを進めることもできます。<br><br>-チャレンジバトルに挑戦<br>1人専用のやりこみ要素「チャレンジバトル」を搭載。限られたアイテムでボスと戦う、本編より少し難しめのステージに挑みます。隠された条件をクリアーして、ボスを撃破しましょう。<br><br>-バトルゲームも！<br>2人専用の対戦モードも収録。10種類の専用ステージで、時間いっぱい敵を倒してスコアを競い合おう！<br><br>-カジュアルモードで安心<br>通常難易度に加えて、救済措置がプラスされた「カジュアルモード」も選択できます。ゲームに慣れていない方でも、気持ちよく遊ぶことができます。<br><br>悪の「ブート伯爵」の策により、宇宙船「マゼンタ・ジョロキア」に連れ去られた二人。新たな敵「ダークアチェロ」を打ち倒し、無事脱出することができるのでしょうか…？"
+];
+
+return a[e];
+
+}
+
+
+
+</script>
+
+</body>
+</html>

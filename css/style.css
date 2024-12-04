@@ -268,6 +268,27 @@ li{
 
 }
 
+#keyVisual{
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+
+
+}
+
+#keyVisual img{
+
+    position: relative;
+    left: 50%;
+    width: 65%;
+    transform: translate(-50%,-0%);
+
+
+
+}
 
 @media screen and (max-width: 959px) {
 
@@ -366,6 +387,21 @@ li{
     }
     li{
         font-size: 0.9em;
+    }
+
+    #keyVisual{
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+    
+    
+    }
+    
+    #keyVisual img{
+    
+        width: 62%;
+    
     }
 
 
@@ -467,6 +503,21 @@ li{
     }
     li{
         font-size: 0.75em;
+    }
+
+    #keyVisual{
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+    
+    
+    
+    }
+    
+    #keyVisual img{
+    
+        width: 60%;
+    
     }
 
 }
