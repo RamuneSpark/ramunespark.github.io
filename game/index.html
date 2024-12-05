@@ -114,8 +114,10 @@ function visual(i){
     const p = document.createElement("p");
     p.innerHTML = navi(i);
     document.getElementById("privacyPolicyBox").appendChild(p);
-    
-    const ms = document.createElement("ms");
+
+
+    const ms = document.createElement("div");
+    ms.id = "ms";
     document.getElementById("privacyPolicyBox").appendChild(ms);
     ms.innerHTML = badge(i);
 
@@ -125,10 +127,9 @@ function visual(i){
 function badge(e){
 
 
+    const id = ['9P1X8Q084W5X','9N5N9PHP569J','9PJWNT9TR18S'];
 
-    const a = ['','','<ms-store-badge productid="9PJWNT9TR18S" productname="ブーメランサバイバー3" window-mode="direct" theme="dark" language="ja-jp" animation="off"></ms-store-badge>'];
-
-    const b = a[e];
+    const b = `<ms-store-badge productid="${id[e]}" productname="${t1[e]}" window-mode="direct" theme="dark" language="ja-jp" animation="off"></ms-store-badge>`;
 
     return b;
 

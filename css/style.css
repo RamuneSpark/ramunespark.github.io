@@ -279,6 +279,23 @@ li{
 
 }
 
+#ms{
+    position: relative;
+    width:100%;
+    
+    
+}
+
+ms-store-badge{
+
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    transform-origin: center left;
+    transform: scale(0.8);
+
+}
+
 #keyVisual img{
 
     position: relative;
@@ -404,6 +421,12 @@ li{
     
     }
 
+    ms-store-badge{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        transform: scale(0.7);
+    
+    }
 
 }
 @media screen and (max-width: 480px) {
@@ -517,6 +540,13 @@ li{
     #keyVisual img{
     
         width: 60%;
+    
+    }
+
+    ms-store-badge{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transform: scale(0.5);
     
     }
 

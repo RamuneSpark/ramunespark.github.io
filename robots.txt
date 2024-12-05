@@ -1,6 +1,7 @@
 User-Agent: *
 Disallow: /privacyPolicy/
 Disallow: /support/
+Disallow: /gameImg/lib/
 Disallow: /gamepad/
 Disallow: /puzzleMaker/image/
 Disallow: /puzzleMaker/sys/
