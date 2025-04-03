@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="../favicon.ico" />
+
+    <title>ジャイロテスト | RAMUNE SPARK</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleOmake.css">
+
+</head>
+
+<body>
+
+
+    <div id="logo">
+        <a href="../">
+            <img src="../img/logo.png">
+        </a>
+    </div>
+
+    <div class="blank"></div>
+    <div class="MainTitle"></div>
+
+    <div class=pageTitle>
+        ジャイロテスト
+    </div>
+
+    </div>
+
+
+
+    <div class="blank2"></div>
+
+
+    <noscript>
+        <div class="container">
+
+            <ul>
+                <p>コンテンツのデータの取得に失敗しました。</p>
+                <li>JavaScriptが無効になっている場合、コンテンツを正常に表示できません。</li>
+            </ul>
+
+        </div>
+    </noscript>
+
+    <div class="container" id="omakeBox" style="display:none">
+
+    </div>
+
+    <div class="container2" id="omakeBox2" style="display:none">
+
+    </div>
+
+
+    <div class="blank2"></div>
+
+    <div id=top>
+        <a href="../">
+            [TOP]
+        </a>
+    </div>
+
+
+    <div class="blank2"></div>
+    <div id=copyRight>
+        © RAMUNE SPARK
+    </div>
+    <div id=copyRight style="text-align: left;">
+        <a href="./">
+            おまけのぺえじに戻る
+        </a>
+    </div>
+    <div id=copyRight>
+        <a href="../support">
+            サポート
+        </a>
+    </div>
+
+
+    <script src="js/function.js"></script>
+    <script>
+
+
+
+        const div_alphaText = createDiv("alphaText");
+        omakeBox.appendChild(div_alphaText);
+        div_alphaText.style.position = "relative";
+        div_alphaText.style.margin = "auto";
+        div_alphaText.style.fontSize = "1.6em";
+        div_alphaText.style.paddingLeft = "2.0em";
+        div_alphaText.style.paddingRight = "2.0em";
+        div_alphaText.style.fontWeight = "bold";
+        div_alphaText.style.textAlign = "center";
+        div_alphaText.style.color = ramuneBlue;
+        div_alphaText.innerHTML = "alpha (Z)";
+
+        const div_alphaFrame = createDiv("alphaFrame");
+        omakeBox.appendChild(div_alphaFrame);
+        div_alphaFrame.style.width = "100%";
+        div_alphaFrame.style.position = "relative";
+        //div_alphaFrame.style.backgroundColor = "#CCCCCC";
+        div_alphaFrame.style.aspectRatio = 3;
+
+
+        const div_alphaDevice = createDiv("alphaDevice");
+        div_alphaFrame.appendChild(div_alphaDevice);
+        div_alphaDevice.style.height = "70%";
+        div_alphaDevice.style.left = "25%";
+        div_alphaDevice.style.top = "50%";
+        div_alphaDevice.style.transform = "translate(-50%,-50%)";
+        div_alphaDevice.style.position = "absolute";
+        div_alphaDevice.style.margin = "auto";
+        div_alphaDevice.style.aspectRatio = 0.6;
+        div_alphaDevice.style.backgroundColor = ramuneBlue;
+        div_alphaDevice.style.borderRadius = "20%";
+
+        const div_alphaDeviceWhite = createDiv("alphaDeviceWhite");
+        div_alphaDevice.appendChild(div_alphaDeviceWhite);
+        div_alphaDeviceWhite.style.height = "80%";
+        div_alphaDeviceWhite.style.left = "50%";
+        div_alphaDeviceWhite.style.top = "50%";
+        div_alphaDeviceWhite.style.transform = "translate(-50%,-50%)";
+        div_alphaDeviceWhite.style.position = "absolute";
+        div_alphaDeviceWhite.style.margin = "auto";
+        div_alphaDeviceWhite.style.aspectRatio = 0.6;
+        div_alphaDeviceWhite.style.backgroundColor = "#FFFFFF";
+        div_alphaDeviceWhite.style.borderRadius = "20%";
+
+        const div_alphaAnswer = createDiv("alphaAnswer");
+        div_alphaFrame.appendChild(div_alphaAnswer);
+        div_alphaAnswer.style.position = "absolute";
+        div_alphaAnswer.style.left = "100%";
+        div_alphaAnswer.style.top = "50%";
+        div_alphaAnswer.style.transform = "translate(-100%,-50%)";
+        div_alphaAnswer.style.fontSize = "1.1em";
+        div_alphaAnswer.style.fontWeight = "bold";
+        div_alphaAnswer.style.textAlign = "right";
+        div_alphaAnswer.style.color = ramuneBlue;
+
+        //ベータ
+        const div_betaText = createDiv("betaText");
+        omakeBox.appendChild(div_betaText);
+        div_betaText.style.position = "relative";
+        div_betaText.style.margin = "auto";
+        div_betaText.style.fontSize = "1.6em";
+        div_betaText.style.paddingLeft = "2.0em";
+        div_betaText.style.paddingRight = "2.0em";
+        div_betaText.style.fontWeight = "bold";
+        div_betaText.style.textAlign = "center";
+        div_betaText.style.color = ramunePink;
+        div_betaText.innerHTML = "beta (X)";
+
+        const div_betaFrame = createDiv("betaFrame");
+        omakeBox.appendChild(div_betaFrame);
+        div_betaFrame.style.width = "100%";
+        div_betaFrame.style.position = "relative";
+        //div_betaFrame.style.backgroundColor = "#CCCCCC";
+        div_betaFrame.style.aspectRatio = 3;
+
+
+        const div_betaDevice = createDiv("alphaDevice");
+        div_betaFrame.appendChild(div_betaDevice);
+        div_betaDevice.style.height = "70%";
+        div_betaDevice.style.left = "25%";
+        div_betaDevice.style.top = "50%";
+        div_betaDevice.style.transform = "translate(-50%,-50%)";
+        div_betaDevice.style.position = "absolute";
+        div_betaDevice.style.margin = "auto";
+        div_betaDevice.style.aspectRatio = 0.6;
+        div_betaDevice.style.backgroundColor = ramunePink;
+        div_betaDevice.style.borderRadius = "20%";
+
+        const div_betaDeviceWhite = createDiv("alphaDeviceWhite");
+        div_betaDevice.appendChild(div_betaDeviceWhite);
+        div_betaDeviceWhite.style.height = "80%";
+        div_betaDeviceWhite.style.left = "50%";
+        div_betaDeviceWhite.style.top = "50%";
+        div_betaDeviceWhite.style.transform = "translate(-50%,-50%)";
+        div_betaDeviceWhite.style.position = "absolute";
+        div_betaDeviceWhite.style.margin = "auto";
+        div_betaDeviceWhite.style.aspectRatio = 0.6;
+        div_betaDeviceWhite.style.backgroundColor = "#FFFFFF";
+        div_betaDeviceWhite.style.borderRadius = "20%";
+
+        const div_betaAnswer = createDiv("alphaAnswer");
+        div_betaFrame.appendChild(div_betaAnswer);
+        div_betaAnswer.style.position = "absolute";
+        div_betaAnswer.style.left = "100%";
+        div_betaAnswer.style.top = "50%";
+        div_betaAnswer.style.transform = "translate(-100%,-50%)";
+        div_betaAnswer.style.fontSize = "1.1em";
+        div_betaAnswer.style.fontWeight = "bold";
+        div_betaAnswer.style.textAlign = "right";
+        div_betaAnswer.style.color = ramunePink;
+
+        //ガンマ
+        const div_gammaText = createDiv("gammaText");
+        omakeBox.appendChild(div_gammaText);
+        div_gammaText.style.position = "relative";
+        div_gammaText.style.margin = "auto";
+        div_gammaText.style.fontSize = "1.6em";
+        div_gammaText.style.paddingLeft = "2.0em";
+        div_gammaText.style.paddingRight = "2.0em";
+        div_gammaText.style.fontWeight = "bold";
+        div_gammaText.style.textAlign = "center";
+        div_gammaText.style.color = ramuneYellow2;
+        div_gammaText.innerHTML = "gamma (Y)";
+
+        const div_gammaFrame = createDiv("gammaFrame");
+        omakeBox.appendChild(div_gammaFrame);
+        div_gammaFrame.style.width = "100%";
+        div_gammaFrame.style.position = "relative";
+        //div_gammaFrame.style.backgroundColor = "#CCCCCC";
+        div_gammaFrame.style.aspectRatio = 3;
+
+
+        const div_gammaDevice = createDiv("alphaDevice");
+        div_gammaFrame.appendChild(div_gammaDevice);
+        div_gammaDevice.style.height = "10%";
+        div_gammaDevice.style.left = "25%";
+        div_gammaDevice.style.top = "50%";
+        div_gammaDevice.style.transform = "translate(-50%,-50%)";
+        div_gammaDevice.style.position = "absolute";
+        div_gammaDevice.style.margin = "auto";
+        div_gammaDevice.style.aspectRatio = 4.5;
+        div_gammaDevice.style.backgroundColor = ramuneYellow2;
+        div_gammaDevice.style.borderRadius = "20%";
+
+        /*
+        const div_gammaDeviceWhite = createDiv("alphaDeviceWhite");
+        div_gammaDevice.appendChild(div_gammaDeviceWhite);
+        div_gammaDeviceWhite.style.height = "80%";
+        div_gammaDeviceWhite.style.left = "50%";
+        div_gammaDeviceWhite.style.top = "50%";
+        div_gammaDeviceWhite.style.transform = "translate(-50%,-50%)";
+        div_gammaDeviceWhite.style.position = "absolute";
+        div_gammaDeviceWhite.style.margin = "auto";
+        div_gammaDeviceWhite.style.aspectRatio = 4.5;
+        div_gammaDeviceWhite.style.backgroundColor = "#FFFFFF";
+        div_gammaDeviceWhite.style.borderRadius = "20%";
+
+        */
+        const div_gammaAnswer = createDiv("alphaAnswer");
+        div_gammaFrame.appendChild(div_gammaAnswer);
+        div_gammaAnswer.style.position = "absolute";
+        div_gammaAnswer.style.left = "100%";
+        div_gammaAnswer.style.top = "50%";
+        div_gammaAnswer.style.transform = "translate(-100%,-50%)";
+        div_gammaAnswer.style.fontSize = "1.1em";
+        div_gammaAnswer.style.fontWeight = "bold";
+        div_gammaAnswer.style.textAlign = "right";
+        div_gammaAnswer.style.color = ramuneYellow2;
+
+        //abs
+        const div_absoluteText = createDiv("absoluteText");
+        omakeBox.appendChild(div_absoluteText);
+        div_absoluteText.style.position = "relative";
+        div_absoluteText.style.margin = "auto";
+        div_absoluteText.style.fontSize = "1.6em";
+        div_absoluteText.style.paddingLeft = "2.0em";
+        div_absoluteText.style.paddingRight = "2.0em";
+        div_absoluteText.style.fontWeight = "bold";
+        div_absoluteText.style.textAlign = "center";
+        div_absoluteText.style.color = ramuneBlue;
+        div_absoluteText.innerHTML = "absolute";
+
+        const div_absoluteFrame = createDiv("absoluteFrame");
+        omakeBox.appendChild(div_absoluteFrame);
+        div_absoluteFrame.style.width = "100%";
+        div_absoluteFrame.style.position = "relative";
+        //div_absoluteFrame.style.backgroundColor = "#CCCCCC";
+        div_absoluteFrame.style.aspectRatio = 7;
+
+
+        const div_absoluteAnswer = createDiv("absoluteAnswer");
+        div_absoluteFrame.appendChild(div_absoluteAnswer);
+        div_absoluteAnswer.style.position = "absolute";
+        div_absoluteAnswer.style.left = "50%";
+        div_absoluteAnswer.style.top = "50%";
+        div_absoluteAnswer.style.transform = "translate(-50%,-50%)";
+        div_absoluteAnswer.style.fontSize = "1.3em";
+        div_absoluteAnswer.style.fontWeight = "bold";
+        div_absoluteAnswer.style.textAlign = "right";
+        div_absoluteAnswer.style.color = ramuneBlue;
+
+
+
+        let check = { alpha: 0, beta: 0, gamma: 0, absolute: "null" };
+        let data = { alpha: 0, beta: 0, gamma: 0, absolute: false };
+        let visual = { alpha: 0, beta: 0, gamma: 0 };
+        let betaWhiteOpacity = 1;
+
+        if ("ondeviceorientation" in window) {
+
+            window.addEventListener("deviceorientation", (e) => {
+
+                check.alpha = e.alpha;
+                check.beta = e.beta;
+                check.gamma = e.gamma;
+                check.absolute = e.absolute;
+
+                if (check.absolute !== "null" && (check.absolute === true || check.absolute === false)) {
+
+                    data.absolute = check.absolute
+
+                }
+
+                if (!isNaN(check.alpha)) {
+
+                    data.alpha = check.alpha;
+                    visual.alpha = -check.alpha;
+
+                }
+
+
+
+                if (!isNaN(check.beta)) {
+
+                    data.beta = check.beta;
+                    visual.beta = check.beta;
+
+                    if (visual.beta > 90) {
+
+                        visual.beta = 180 - visual.beta;
+
+                    } else if (visual.beta < -90) {
+
+                        visual.beta = -180 - visual.beta;
+
+                    }
+
+                    if (visual.beta >= 0) {
+
+                        betaWhiteOpacity = 1;
+
+                    } else {
+
+                        betaWhiteOpacity = 0;
+
+                    }
+
+                    visual.beta *= (1 / 90);
+
+                }
+
+                if (!isNaN(check.gamma)) {
+
+                    data.gamma = check.gamma;
+                    visual.gamma = check.gamma;
+
+                }
+
+            });
+
+        }
+
+        function display() {
+
+            div_alphaDevice.style.transform = "translate(-50%, -50%) rotate(" + visual.alpha + "deg)";
+            div_alphaAnswer.innerHTML = "<nobr>alpha<br>" + data.alpha.toFixed(digit) + "</nobr>";
+
+            div_betaDevice.style.transform = "translate(-50%, -50%) scaleY(" + visual.beta + ")";
+            div_betaAnswer.innerHTML = "<nobr>beta<br>" + data.beta.toFixed(digit) + "</nobr>";
+            div_betaDeviceWhite.style.opacity = betaWhiteOpacity;
+
+            div_gammaDevice.style.transform = "translate(-50%, -50%) rotate(" + visual.gamma + "deg)";
+            div_gammaAnswer.innerHTML = "<nobr>gamma<br>" + data.gamma.toFixed(digit) + "</nobr>";
+
+            div_absoluteAnswer.innerHTML = "<nobr>" + data.absolute + "</nobr>";
+
+
+            window.requestAnimationFrame(display);
+
+        }
+
+
+
+        window.requestAnimationFrame(display);
+
+
+
+        /*ボタン作成*/
+
+        let bSwitch = [1];
+
+        const digitMode = [30, 2];
+        let digit = digitMode[bSwitch[0]];
+
+        /*
+
+        const div_buttonFrame = [];
+        const div_button = [];
+        const div_buttonTxtL = [];
+        const div_buttonTxtR = [];
+
+        const bt0 = ["OFF", "ON"];
+        const bt1 = ["OFF", "ON"];
+
+
+        for (let i = 0; i < 1; i++) {
+
+            div_button[i] = createDiv("button" + i);
+            div_buttonFrame[i] = createDiv("buttonFrame" + i);
+            div_buttonFrame[i].className = "omakeButtonFrame";
+            div_buttonTxtL[i] = createDiv("buttonTxtL" + i);
+            div_buttonTxtR[i] = createDiv("buttonTxtR" + i);
+            omakeBox.appendChild(div_buttonFrame[i]);
+            div_buttonFrame[i].appendChild(div_button[i]);
+            div_button[i].appendChild(div_buttonTxtL[i]);
+            div_button[i].appendChild(div_buttonTxtR[i]);
+
+            div_buttonFrame[i].style.width = "100%";
+            div_buttonFrame[i].style.marginTop = "2em";
+            div_buttonFrame[i].style.marginBottom = "2em";
+
+            buttonSet(i)
+        }
+
+        function buttonSet(e) {
+
+
+            div_button[e].style.margin = "3%";
+            div_button[e].style.padding = "0.25em";
+            div_button[e].style.width = "94%";
+            div_button[e].style.display = "flex";
+            div_button[e].style.backgroundColor = ramuneBlue2;
+            div_button[e].style.borderRadius = "20px";
+            div_button[e].style.justifyContent = "space-between";
+
+
+            div_buttonTxtL[e].style.position = "relative";
+            div_buttonTxtL[e].style.marginLeft = "1em";
+
+            div_buttonTxtL[e].style.textAlign = "left";
+            div_buttonTxtL[e].style.color = "#FFFFFF";
+            div_buttonTxtL[e].style.fontSize = "1.5em";
+
+            div_buttonTxtR[e].style.position = "relative";
+            div_buttonTxtR[e].style.marginRight = "1em";
+
+            div_buttonTxtR[e].style.textAlign = "right";
+            div_buttonTxtR[e].style.color = "#FFFFFF";
+            div_buttonTxtR[e].style.fontSize = "1.5em";
+
+        }
+
+        div_buttonTxtL[0].textContent = "概数モード";
+        div_buttonTxtR[0].textContent = bt0[bSwitch];
+
+
+
+
+        div_button[0].onmousedown = () => {
+
+            event.preventDefault();
+
+            bSwitch[0] ^= 1;
+            div_buttonTxtR[0].textContent = bt0[bSwitch[0]];
+
+            digit = digitMode[bSwitch[0]];
+
+        }
+
+        
+
+        */
+
+        createManual("DeviceOrientationの挙動を確認できます。<br>※非対応のブラウザ・環境では動作しません。")
+
+
+    </script>
+
+
+</body>
+
+</html>

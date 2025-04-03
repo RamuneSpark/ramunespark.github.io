@@ -7,13 +7,14 @@ omakeBox2.style.display = "block";
 const ramuneBlue = "#1959A8";
 const ramuneBlue2 = "#5D98B5";
 const ramuneYellow = "#F2EE6C";
+const ramuneYellow2 = "#9C9949";
 const ramunePink = "#DA88B6";
 
 function createManual(e){
 
     const p = document.createElement("p");
     omakeBox2.appendChild(p)
-    p.textContent = e;
+    p.innerHTML = e;
 
 }
 
