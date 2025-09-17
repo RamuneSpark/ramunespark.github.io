@@ -108,6 +108,7 @@ top:0px;
 
 .itemHR{
 
+    position: relative;
     width: 100%;
     margin: 2px;
     border-top: 1px;
