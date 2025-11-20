@@ -19,4 +19,10 @@ Disallow: /boomerangSurvivor_mobile/js/
 Disallow: /boomerangSurvivor_mobile/modules/
 Disallow: /boomerangSurvivor_mobile/ogg/
 Disallow: /boomerangSurvivor_mobile/pcInformation/
+Disallow: /amanoJack/image/
+Disallow: /amanoJack/sys/
+Disallow: /amanoJack/css/
+Disallow: /amanoJack/js/
+Disallow: /amanoJack/modules/
+Disallow: /amanoJack/sound/
 Disallow: /kimochi/
