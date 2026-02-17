@@ -25,4 +25,10 @@ Disallow: /amanoJack/css/
 Disallow: /amanoJack/js/
 Disallow: /amanoJack/modules/
 Disallow: /amanoJack/sound/
+Disallow: /patchTights/image/
+Disallow: /patchTights/sys/
+Disallow: /patchTights/css/
+Disallow: /patchTights/js/
+Disallow: /patchTights/modules/
+Disallow: /patchTights/sound/
 Disallow: /kimochi/
