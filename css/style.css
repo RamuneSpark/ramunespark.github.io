@@ -7,30 +7,29 @@ body {
     width: 100%;
     box-sizing: border-box;
     font-size: 15px;
-    
-}
-
-.MainTitle{
-
-    width:100%
 
 }
 
-.blank{
+.MainTitle {
 
-    width:100%;
-    height:80px;
+    width: 100%
+}
+
+.blank {
+
+    width: 100%;
+    height: 80px;
 
 }
 
-.blank2{
+.blank2 {
 
-    width:100%;
-    height:30px;
+    width: 100%;
+    height: 30px;
 
 }
 
-.pageTitle{
+.pageTitle {
 
     text-align: center;
     color: #1959A8;
@@ -62,7 +61,7 @@ body {
 
     display: block;
     width: 47%;
-    height:140px;
+    height: 140px;
     margin: 10px;
     background: #FFFFFF;
     box-shadow: 0 0 30px rgba(25, 89, 168, 0.3);
@@ -71,63 +70,63 @@ body {
 
 }
 
-.item a{
+.item a {
     position: relative;
     display: block;
     width: 100%;
     height: 100%;
-    
+
 }
 
 .itemI {
 
     position: relative;
-    left:2%;
-    top:50%;
-    height:100px;
+    left: 2%;
+    top: 50%;
+    height: 100px;
     width: 100px;
 
-    transform: translate(0%,-50%);
+    transform: translate(0%, -50%);
 
 }
 
-.itemT{
+.itemT {
     position: absolute;
-margin: 10px;
-left:110px;
-top:0px;
+    margin: 10px;
+    left: 110px;
+    top: 0px;
 
 }
 
-.itemTitle{
+.itemTitle {
     color: #1959A8;
     font-weight: bold;
     font-size: 1.2rem;
-    
+
 }
 
-.itemHR{
+.itemHR {
 
     position: relative;
     width: 100%;
     margin: 2px;
     border-top: 1px;
-    background-color:#1959A8;
-    color:#1959A8;
+    background-color: #1959A8;
+    color: #1959A8;
 
 }
 
-.itemEx{
+.itemEx {
     color: #5D98B5;
     font-weight: normal;
     font-size: 1.0rem;
-    
+
 }
 
-.itemI img{
+.itemI img {
 
-    height:100%;
-    width:auto;
+    height: 100%;
+    width: auto;
 
 }
 
@@ -135,7 +134,7 @@ top:0px;
 
 .itemLinkBox {
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
 .container2 {
@@ -155,7 +154,9 @@ top:0px;
 
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     text-align: center;
     color: #1959A8;
 }
@@ -166,14 +167,17 @@ h1 {
     font-size: 1.6rem;
     font-weight: bold;
 }
+
 h2 {
     font-size: 1.3rem;
     font-weight: bold;
 }
+
 h3 {
     font-size: 1.1rem;
     font-weight: normal;
 }
+
 ul {
     padding-left: 50px;
     padding-right: 50px;
@@ -181,25 +185,26 @@ ul {
     padding-bottom: 10px;
 
 }
-.box{
+
+.box {
 
     position: relative;
-    left:50%;
-    transform: translate(-50%,0%);
-    width:90%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 90%;
     align-items: stretch;
-    
-  justify-content: center;
- 
+
+    justify-content: center;
+
     box-shadow: 0 0 30px rgba(218, 136, 182, 0.3);
     max-width: 1100px;
-    padding:50px;
+    padding: 50px;
     display: flex;
     flex-wrap: wrap;
 
 }
 
-.boxTitle{
+.boxTitle {
 
     text-align: center;
     color: #1959A8;
@@ -216,61 +221,69 @@ ul {
     padding-top: 5px;
     padding-bottom: 10px;
 }
-#logo{
+
+#logo {
     position: relative;
-    left:50%;
-    transform: translate(-50%,0%);
+    left: 50%;
+    transform: translate(-50%, 0%);
     height: 100px;
-    width:100%;
+    width: 100%;
     max-width: 1200px;
 }
-#logo img{
+
+#logo img {
     height: 100px;
-    width:auto;
+    width: auto;
 
 }
-p,li {
+
+p,
+li {
     color: #1959A8;
     font-weight: normal;
-    
+
 }
-p{
+
+p {
     font-size: 1.15em;
 }
-li{
-    
+
+li {
+
     font-size: 1.0rem;
     padding-left: 10px;
     padding-right: 10px;
     color: #5D98B5;
 
 }
-#copyRight{
+
+#copyRight {
     position: relative;
-    left:50%;
-    transform: translate(-50%,0%);
+    left: 50%;
+    transform: translate(-50%, 0%);
     color: #1959A8;
     font-weight: normal;
     font-size: 1.2rem;
     width: 100%;
     max-width: 1200px;
-    text-align:right;
+    text-align: right;
 
 }
-#top{
+
+#top {
     position: relative;
-    left:50%;
-    transform: translate(-50%,0%);
+    left: 50%;
+    transform: translate(-50%, 0%);
     color: #1959A8;
     font-weight: normal;
     font-size: 1.2rem;
     width: 100%;
     max-width: 1200px;
-    text-align:center;
+    text-align: center;
 
 }
 
-#keyVisual{
+#keyVisual {
 
     margin-left: auto;
     margin-right: auto;
@@ -281,29 +294,59 @@ li{
 
 }
 
-#ms{
-    position: relative;
-    width:100%;
-    
-    
-}
-
-ms-store-badge{
+ms-store-badge {
 
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    transform-origin: center left;
-    transform: scale(0.8);
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    width: auto;
 
 }
 
-#keyVisual img{
+.jumpButton {
+
+    margin-top: 30px;
+
+}
+
+.jumpButton a {
+
+    position: relative;
+    display: block;
+    width: 350px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+}
+
+#steam a {
+    background: linear-gradient(#000000, #00adee);
+}
+
+.jumpButton span {
+
+    color: #FFFFFF;
+    font-size: 25px;
+    position: absolute;
+    white-space: nowrap;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+#keyVisual img {
 
     position: relative;
     left: 50%;
     width: 65%;
-    transform: translate(-50%,-0%);
+    transform: translate(-50%, -0%);
 
 
 
@@ -311,51 +354,56 @@ ms-store-badge{
 
 @media screen and (max-width: 959px) {
 
-    .blank{
+    .blank {
 
-        height:70px;
-    
-    }
-    
-    .blank2{
+        height: 70px;
 
-        height:25px;
-    
     }
+
+    .blank2 {
+
+        height: 25px;
+
+    }
+
     .item {
         width: 80%;
-        height:120px;
-     
+        height: 120px;
+
     }
+
     .itemI {
 
-        height:80px;
+        height: 80px;
         width: 80px;
-       
-    
-    }
-    .itemT{
-    left:90px;
-    
-    }
-    
-    .itemTitle{
-        font-size: 1.0rem;
-        
+
+
     }
 
-    .itemEx{
-        font-size: 0.8rem;
-        
+    .itemT {
+        left: 90px;
+
     }
-    
+
+    .itemTitle {
+        font-size: 1.0rem;
+
+    }
+
+    .itemEx {
+        font-size: 0.8rem;
+
+    }
+
     h1 {
 
         font-size: 1.4rem;
     }
+
     h2 {
         font-size: 1.2rem;
     }
+
     h3 {
         font-size: 1.0rem;
     }
@@ -364,192 +412,257 @@ ms-store-badge{
         padding-left: 50px;
         padding-right: 50px;
     }
+
     .container2 {
         padding-left: 50px;
         padding-right: 50px;
     }
+
     ul {
         padding-left: 30px;
         padding-right: 30px;
     }
-    .pageTitle{
-    
-        font-size: 1.9rem;
-    
-    }
-    .box{
-        padding:30px;
 
-    
+    .pageTitle {
+
+        font-size: 1.9rem;
+
     }
-    .boxTitle{
+
+    .box {
+        padding: 30px;
+
+
+    }
+
+    .boxTitle {
 
         font-size: 1.5rem;
-    
+
     }
-    #logo{
+
+    #logo {
         height: 70px;
-        width:100%;
-    
+        width: 100%;
+
     }
-    #logo img{
+
+    #logo img {
         height: 70px;
-        width:auto;
-    
+        width: auto;
+
     }
-    #copyRight,#top{
+
+    #copyRight,
+    #top {
         font-size: 0.9rem;
-     
+
     }
-    p{
+
+    p {
         font-size: 1.0em;
     }
-    li{
+
+    li {
         font-size: 0.9em;
     }
 
-    #keyVisual{
+    #keyVisual {
 
         margin-top: 20px;
         margin-bottom: 20px;
-    
-    
-    
-    }
-    
-    #keyVisual img{
-    
-        width: 62%;
-    
+
+
+
     }
 
-    ms-store-badge{
-        margin-top: 15px;
-        margin-bottom: 15px;
-        transform: scale(0.7);
-    
+    .jumpButton {
+
+        margin-top: 20px;
+
     }
+
+    .jumpButton a {
+
+        width: 280px;
+        height: 40px;
+
+    }
+
+    .jumpButton span {
+
+        font-size: 20px;
+
+    }
+
+
+
+    #keyVisual img {
+
+        width: 62%;
+
+    }
+
+
 
 }
+
 @media screen and (max-width: 480px) {
 
-    .blank{
+    .blank {
 
-        height:60px;
-    
-    }
-    
-    .blank2{
+        height: 60px;
 
-        height:20px;
-    
     }
+
+    .blank2 {
+
+        height: 20px;
+
+    }
+
     .item {
         width: 90%;
-        height:100px;
-     
+        height: 100px;
+
     }
+
     .itemI {
 
-        height:60px;
+        height: 60px;
         width: 60px;
-       
-    
+
+
     }
-    .itemT{
-        left:70px;
-        
-        }
-        
-        .itemTitle{
-            font-size: 0.8rem;
-            
-        }
-        .itemEx{
-            font-size: 0.65rem;
-            
-        }
+
+    .itemT {
+        left: 70px;
+
+    }
+
+    .itemTitle {
+        font-size: 0.8rem;
+
+    }
+
+    .itemEx {
+        font-size: 0.65rem;
+
+    }
+
     h1 {
 
         font-size: 1.3rem;
     }
+
     h2 {
         font-size: 1.1rem;
     }
+
     h3 {
         font-size: 1.0rem;
     }
-    
+
     .container {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .container2 {
         padding-left: 10px;
         padding-right: 10px;
     }
-    ul {
-         padding-left: 20px;
-        padding-right: 20px;
-    
-    }
-    .pageTitle{
-    
-        font-size: 1.7rem;
-    
-    }
-    .box{
 
-        padding:15px;
-    
-    
+    ul {
+        padding-left: 20px;
+        padding-right: 20px;
+
     }
-    .boxTitle{
+
+    .pageTitle {
+
+        font-size: 1.7rem;
+
+    }
+
+    .box {
+
+        padding: 15px;
+
+
+    }
+
+    .boxTitle {
 
         font-size: 1.3rem;
-    
+
     }
-    #logo{
+
+    #logo {
         height: 50px;
-        width:100%;
-    
+        width: 100%;
+
     }
-    #logo img{
+
+    #logo img {
         height: 50px;
-        width:auto;
-    
-    
+        width: auto;
+
+
     }
-    #copyRight,#top{
+
+    #copyRight,
+    #top {
         font-size: 0.7rem;
     }
-    p{
+
+    p {
         font-size: 0.8em;
     }
-    li{
+
+    li {
         font-size: 0.75em;
     }
 
-    #keyVisual{
+    #keyVisual {
 
         margin-top: 15px;
         margin-bottom: 15px;
-    
-    
-    
+
+
+
     }
-    
-    #keyVisual img{
-    
+
+    #keyVisual img {
+
         width: 60%;
-    
+
     }
 
-    ms-store-badge{
-        margin-top: 10px;
-        margin-bottom: 10px;
-        transform: scale(0.5);
-    
+
+    #steam img {
+        position: relative;
+        width: 100px;
+
     }
 
+    .jumpButton {
+
+        margin-top: 15px;
+
+    }
+
+    .jumpButton a {
+
+        width: 175px;
+        height: 25px;
+
+
+    }
+
+    .jumpButton span {
+
+        font-size: 12px;
+
+    }
 }

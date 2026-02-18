@@ -1,175 +1,178 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type = "image/vnd.microsoft.icon" href="../favicon.ico" />
-      
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="../favicon.ico" />
+
     <title>動作確認済コントローラ | RAMUNE SPARK</title>
-    <link rel = "stylesheet" href="../css/style.css">
-         
+    <link rel="stylesheet" href="../css/style.css">
+
 </head>
+
 <body>
 
 
-    <div id = "logo">
+    <div id="logo">
         <a href="../">
-        <img src = "../img/logo.png">
+            <img src="../img/logo.png">
         </a>
     </div>
 
-    <div class = "blank"></div>
+    <div class="blank"></div>
 
-    <div class = "MainTitle">
+    <div class="MainTitle">
 
-        <div class = pageTitle id="privacyPolicyTitle">
+        <div class=pageTitle id="privacyPolicyTitle">
             ロードエラー！
         </div>
 
     </div>
 
-    
 
-    <div class = "blank2"></div>
+
+    <div class="blank2"></div>
 
     <div class="container" id="privacyPolicyBox">
         <ul>
             <p>動作確認済コントローラのデータの取得に失敗しました。</p>
             <li>JavaScriptが無効になっている場合、動作確認済コントローラを正常に表示できません。</li>
-            </ul>
-         </div>
+        </ul>
+    </div>
 
 
-         <div class="blank2"></div>
+    <div class="blank2"></div>
 
-         <div id = top>
-             <a href="../">
-             [TOP]
-             </a>
-         </div>
-        <div class="blank2"></div>
-        <div id = copyRight>
-            © RAMUNE SPARK
-        </div>
-        <div id = copyRight>
-            <a href="../support">
+    <div id=top>
+        <a href="../">
+            [TOP]
+        </a>
+    </div>
+    <div class="blank2"></div>
+    <div id=copyRight>
+        © RAMUNE SPARK
+    </div>
+    <div id=copyRight>
+        <a href="../support">
             サポート
-            </a>
-        </div>
+        </a>
+    </div>
 
 
-<script>
+    <script>
 
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-let game = urlParams.get('game');
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        let game = urlParams.get('game');
 
-//ポリシー1
-const p1 = ["bs","bs2","bs3"];
-const t1 = ["ブーメランサバイバー","ブーメランサバイバー2","ブーメランサバイバー3"]
-const tE1 = ["Boomerang Survivor","Boomerang Survivor 2","Boomerang Survivor 3"]
+        //ポリシー1
+        const p1 = ["bs", "bs2", "bs3", "bsc"];
+        const t1 = ["ブーメランサバイバー", "ブーメランサバイバー2", "ブーメランサバイバー3", "ブーメランサバイバー コレクション"]
+        const tE1 = ["Boomerang Survivor", "Boomerang Survivor 2", "Boomerang Survivor 3", "Boomerang Survivor Collection"]
 
-function padTypeSelect(e){
+        function padTypeSelect(e) {
 
-let type = [];
-
-
-if(game === "bs" || game === "bs2"){
-type = ["任天堂 Nintendo Switch Proコントローラー",
-"8BitDo SN30pro USBゲームパッド",
-"8BitDo SN30pro+",
-"Microsoft Xbox ワイヤレス コントローラー",
-"HORI ホリパッド for Nintendo Switch",
-"HORI PCエンジン mini コントローラー",
-"HORI PCエンジン コアグラフィックス mini コントローラー",
-"HORI ターボパッド for PCエンジン mini"
-];
-}else if(game === "bs3"){
-    type = ["任天堂 Nintendo Switch Proコントローラー",
-    "任天堂 Joy-Con (L)",
-    "任天堂 Joy-Con (R)",
-"8BitDo SN30pro USBゲームパッド",
-"8BitDo SN30pro+",
-"Microsoft Xbox ワイヤレス コントローラー",
-"HORI ホリパッド for Nintendo Switch"
-];
-}
-
-let xx = "";
-
-xx += "<p>動作確認済コントローラの一覧です。</p>";
-
-//定型メッセージの作成
-if(type.length>=1){
-
-    for(let i = 0; i < type.length; i++){
-
-        xx += "<li>"+type[i]+"</li>";
+            let type = [];
 
 
-}
+            if (game === "bs" || game === "bs2" || game === "bsc") {
+                type = ["任天堂 Nintendo Switch Proコントローラー",
+                    "8BitDo SN30pro USBゲームパッド",
+                    "8BitDo SN30pro+",
+                    "Microsoft Xbox ワイヤレス コントローラー",
+                    "HORI ホリパッド for Nintendo Switch",
+                    "HORI PCエンジン mini コントローラー",
+                    "HORI PCエンジン コアグラフィックス mini コントローラー",
+                    "HORI ターボパッド for PCエンジン mini"
+                ];
+            } else if (game === "bs3") {
+                type = ["任天堂 Nintendo Switch Proコントローラー",
+                    "任天堂 Joy-Con (L)",
+                    "任天堂 Joy-Con (R)",
+                    "8BitDo SN30pro USBゲームパッド",
+                    "8BitDo SN30pro+",
+                    "Microsoft Xbox ワイヤレス コントローラー",
+                    "HORI ホリパッド for Nintendo Switch"
+                ];
+            }
 
-}
+            let xx = "";
 
-//特殊注釈
+            xx += "<p>動作確認済コントローラの一覧です。</p>";
+
+            //定型メッセージの作成
+            if (type.length >= 1) {
+
+                for (let i = 0; i < type.length; i++) {
+
+                    xx += "<li>" + type[i] + "</li>";
+
+
+                }
+
+            }
+
+            //特殊注釈
 
 
 
-if(game === "bs" || game === "bs2"){
+            if (game === "bs" || game === "bs2" || game === "bsc") {
 
-    xx += "<p>※『"+t1[e]+"』は主にXinputのコントローラでの動作を想定して制作されています。</p>";
-xx += "<p>※コントローラのスティックを使用することはできません。</p>"
+                xx += "<p>※『" + t1[e] + "』は主にXinputのコントローラでの動作を想定して制作されています。</p>";
+                xx += "<p>※コントローラのスティックを使用することはできません。</p>"
 
-}else if(game === "bs3" ){
+            } else if (game === "bs3") {
 
-    xx += "<p>※『"+t1[e]+"』は主にXinputのコントローラでの動作を想定して制作されています。</p>";
-xx += "<p>※HORIのPCエンジン mini用各種コントローラも動作しますが、『ブーメランサバイバー1・2』とは異なり、ボタン数の都合で一部の操作が行えません。</p>"
+                xx += "<p>※『" + t1[e] + "』は主にXinputのコントローラでの動作を想定して制作されています。</p>";
+                xx += "<p>※HORIのPCエンジン mini用各種コントローラも動作しますが、『ブーメランサバイバー1・2』とは異なり、ボタン数の都合で一部の操作が行えません。</p>"
 
-}
+            }
 
-return xx;
+            return xx;
 
-}
+        }
 
-let success = 0;
+        let success = 0;
 
-let a = `<ul>
+        let a = `<ul>
             <p>動作確認済コントローラのデータの取得に失敗しました。</p>
             <li>URLが正しくない可能性があります。</li>
             <li>ページのキャッシュ等を削除すると、解消する可能性があります。</li>
             </ul>
         `;
 
-for(let i = 0; i < p1.length; i++){
+        for (let i = 0; i < p1.length; i++) {
 
-if(p1[i] === game){
+            if (p1[i] === game) {
 
-success = 1;
+                success = 1;
 
-let x = padTypeSelect(i);
+                let x = padTypeSelect(i);
 
-a = `<ul>
-            <h1>`+t1[i]+`</h1>  
-            `+x+`
+                a = `<ul>
+            <h1>`+ t1[i] + `</h1>  
+            `+ x + `
             </ul>`;
 
-break;
+                break;
 
-}
-
-
-
-}
+            }
 
 
-document.getElementById("privacyPolicyBox").innerHTML = a;
 
-if(success === 1){
-document.getElementById("privacyPolicyTitle").innerHTML = "動作確認済コントローラ";
-}
+        }
 
 
-</script>
+        document.getElementById("privacyPolicyBox").innerHTML = a;
+
+        if (success === 1) {
+            document.getElementById("privacyPolicyTitle").innerHTML = "動作確認済コントローラ";
+        }
+
+
+    </script>
 
 </body>
+
 </html>
